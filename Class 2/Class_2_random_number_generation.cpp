@@ -6,7 +6,7 @@ int main() {
     using std::chrono::nanoseconds;
     std::random_device rd;
     std::mt19937 gen(rd());
-    // TODO: Please try to fix the code to correctly generate integers from the range [-n, n].
+    // TODO: Fix the code to correctly generate integers from the range [-n, n].
     int n = 10;
     std::uniform_int_distribution<int> dist(0, n/2);
     

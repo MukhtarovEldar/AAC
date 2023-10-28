@@ -30,4 +30,4 @@ The line chart below shows the relationship between array size and time taken to
 
 The line chart below shows the relationship between array size and time taken to find a random value inside the array elements with an integer distribution between (0, 5).
 
-![Alt text](image-4.png)
+![Alt text](output/image-4.png)

@@ -11,13 +11,13 @@ In this project, I measured the performance of different push_back methods for m
 
 The following graphs show the execution times for each push_back method with different array sizes:
 
-![Execution times for Method 1](method1.svg)
+![Execution times for Method 1](methods/method1.svg)
 
-![Execution times for Method 2](method2.svg)
+![Execution times for Method 2](methods/method2.svg)
 
-![Execution times for Method 3](method3.svg)
+![Execution times for Method 3](methods/method3.svg)
 
-![Execution times for Method 4](method4.svg)
+![Execution times for Method 4](methods/method4.svg)
 
 As we can see from the graphs, Method 1 has the best performance in terms of execution time. This is because it increases the capacity of the vector by a large amount, which reduces the number of reallocations needed.
 

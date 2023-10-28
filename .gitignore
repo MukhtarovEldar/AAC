@@ -1,0 +1,24 @@
+# Executables
+*.exe
+*.out
+*.app
+
+# C++ generated files
+*.cpp~
+*.hpp~
+*_gen.cpp
+*_gen.hpp
+
+# Visual Studio specific files
+*.vscode/
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Compiled output files
+output/
+test/

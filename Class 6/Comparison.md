@@ -4,7 +4,7 @@ In this article, I have implemented the Quick Sort Algorithm. The following grap
 
 ## Average and Worst Case Comparison
 
-![Average and Worst Case Comparison](graphs/QuickSortWorstAverageCase.svg)
+![Average and Worst Case Comparison](Graphs/QuickSortWorstAverageCase.svg)
 
 While the graph for worst case has plummeted, average case has a rather steady linear growth for time spent. This is because random numbers generated in the average case can be in a sorted (worst if pivot is the last) or reversed order that can cause these upsteady trend. To solve this problem with both graphs, it is recommended to find the pivot using the following strategy - Median of Three:
 

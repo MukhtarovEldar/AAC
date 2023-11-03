@@ -24,16 +24,18 @@ void sift_down(std::vector<int> &arr, int n){
     for (int i = n / 2; i >= 0; i--) {
         int j = i;
         while (true) {
-            if (2 * j + 1 < n && arr[2 * j + 1] > arr[j]) {
-                std::swap(arr[j], arr[2 * j + 1]);
-                j = 2 * j + 1;
+            int mx_idx = j;
+            if (2 * j + 1 < n && arr[2 * j + 1] > arr[mx_idx]) {
+                mx_idx = 2 * j + 1;
             }
-            if (2 * j + 2 < n && arr[2 * j + 2] > arr[j]) {
-                std::swap(arr[j], arr[2 * j + 2]);
-                j = 2 * j + 2;
-            } else {
+            if (2 * j + 2 < n && arr[2 * j + 2] > arr[mx_idx]) {
+                mx_idx = 2 * j + 2;
+            }
+            if (mx_idx == j) {
                 break;
             }
+            std::swap(arr[j], arr[mx_idx]);
+            j = mx_idx;
         }
     }
 }
@@ -59,17 +61,3 @@ void heap_sort_second(std::vector<int> &arr) {
 }
 
 #endif
-
-// 8	1	7	5	0	9	3	2	4  | i = 0
-// 8	5	7	1	0	9	3	2	4  | i = 1
-// 9	5	8	1	0	7	3	2	4  | i = 2
-// 9	5	8	4	0	7	3	1	2  | i = 3
-
-
-//                  9
-//                 /\
-//                5  8
-//               /\  /\
-//              4  0 7 3
-//             /\
-//            1  2
